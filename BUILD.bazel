@@ -1,0 +1,16 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "tokenizer",
+    visibility = ["//visibility:public"],
+    includes = ["include"],
+    hdrs = glob(["include/boost/**/*.hpp"]),
+    deps = [
+        "@boost//config",
+        "@boost//assert",
+        "@boost//type_traits",
+        "@boost//mpl",
+        "@boost//throw_exception",
+        "@boost//iterator",
+    ],
+)

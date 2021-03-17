@@ -1,0 +1,41 @@
+load("@rules_cc//cc:defs.bzl", "cc_test")
+
+cc_test(
+    name = "simple_example_1",
+    srcs = ["simple_example_1.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
+
+cc_test(
+    name = "simple_example_2",
+    srcs = ["simple_example_2.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
+
+cc_test(
+    name = "simple_example_3",
+    srcs = ["simple_example_3.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
+
+cc_test(
+    name = "simple_example_4",
+    srcs = ["simple_example_4.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
+
+cc_test(
+    name = "simple_example_5",
+    srcs = ["simple_example_5.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)

@@ -1,0 +1,25 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "char_sep_example_1",
+    srcs = ["char_sep_example_1.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
+
+cc_binary(
+    name = "char_sep_example_2",
+    srcs = ["char_sep_example_2.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
+
+cc_binary(
+    name = "char_sep_example_3",
+    srcs = ["char_sep_example_3.cpp"],
+    deps = [
+        "//:tokenizer",
+    ],
+)
