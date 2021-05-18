@@ -6,11 +6,11 @@ cc_library(
     includes = ["include"],
     hdrs = glob(["include/boost/**/*.hpp"]),
     deps = [
-        "@boost//config",
-        "@boost//assert",
-        "@boost//type_traits",
-        "@boost//mpl",
-        "@boost//throw_exception",
-        "@boost//iterator",
+        "@boost//libs/config",
+        "@boost//libs/assert",
+        "@boost//libs/type_traits",
+        "@boost//libs/mpl",
+        "@boost//libs/throw_exception",
+        "@boost//libs/iterator",
     ],
 )
